@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { Il6CompliantAwsEnvStack } from '../lib/il6-compliant-aws-env-stack';
+import { IL6CompliantStack } from '../lib/il6-compliant-aws-env-stack';
+
 
 const app = new cdk.App();
-new Il6CompliantAwsEnvStack(app, 'Il6CompliantAwsEnvStack', {
+new IL6CompliantStack(app, 'IL6CompliantStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
